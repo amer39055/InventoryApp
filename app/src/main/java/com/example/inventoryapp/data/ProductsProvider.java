@@ -14,6 +14,7 @@ public class ProductsProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
+        mDbHelper = new ProductDbHelper(getContext());
         return false;
     }
 
@@ -32,6 +33,7 @@ public class ProductsProvider extends ContentProvider {
     @Nullable
     @Override
     public Uri insert(@NonNull Uri uri, @Nullable ContentValues values) {
+
         return null;
     }
 

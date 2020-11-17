@@ -16,12 +16,12 @@ public class ItemsContract {
         public static final String COLUMN_PRICE = "Price";
         public static final String COLUMN_PHOTO="Photo";
     }
-    public static class Supplier implements BaseColumns{
+    public static class SupplierEntry implements BaseColumns{
         // Definition of table and column names of Suppliers table
         public static final String TABLE_NAME = "Suppliers";
         public static final String COLUMN_SUPPLIER_NAME = "Name";
     }
-    public static class Order implements BaseColumns{
+    public static class OrderEntry implements BaseColumns{
         // Definition of table and column names of ORDERS table
         public static final String TABLE_NAME = "Oreders";
         public static final String COLUMN_PRODUCT_ID = "productId";
