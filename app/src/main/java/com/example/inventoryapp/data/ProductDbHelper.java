@@ -4,22 +4,16 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
-
-import com.example.inventoryapp.Supplier;
 import com.example.inventoryapp.data.ItemsContract;
 import androidx.annotation.Nullable;
 
-import static android.widget.Toast.*;
 
 public class ProductDbHelper extends SQLiteOpenHelper {
-            // TODO set connection to database and all table creation
+
 
     // database version and name
     private static final String DATABASE_NAME = "inventoryDb.db";
     private static final int DB_VERSION =1;
-    // For all Primary Keys _id should be used as column name
-    public static final String COLUMN_ID = "_id";
 
     /**
      * Product Table CREATE Statement
@@ -28,8 +22,8 @@ public class ProductDbHelper extends SQLiteOpenHelper {
             + ItemsContract.ProductEntry._ID +"INTEGER PRIMARY KEY,"
             + ItemsContract.ProductEntry.COLUMN_PRODUCT_NAME + "TEXT UNIQUE NOT NULL,"
             + ItemsContract.ProductEntry.COLUMN_PRICE +"REAL DEFAULT 0,"
-            +ItemsContract.ProductEntry.COLUMN_QNTY + "INTEGER DEFAULT 0,"
-            + ItemsContract.ProductEntry.COLUMN_PHOTO + "BLOB NULL):";
+            + ItemsContract.ProductEntry.COLUMN_QNTY + "INTEGER DEFAULT 0,"
+            + ItemsContract.ProductEntry.COLUMN_PHOTO + "BLOB );";
     /**
      * Suppliers Table CREATE statement
      */
