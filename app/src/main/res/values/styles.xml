@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="form_caption">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="form_field">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

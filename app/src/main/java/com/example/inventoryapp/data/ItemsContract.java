@@ -1,11 +1,22 @@
 package com.example.inventoryapp.data;
 
+import android.net.Uri;
 import android.provider.BaseColumns;
 
 public class ItemsContract {
-    //constructor to prevent any accidentally creation of objects from this class
+    //Private constructor to prevent any accidentally creation of objects from this class
     private ItemsContract(){}
-    //TODO create Content_authority , Base URI and Path for connection URI
+
+    //uri for content
+    public final static String CONTENT_AUTHORITY = "com.example.inventory";
+    //create usable URI
+    public static final Uri BASE_CONTENT_URI = Uri.parse("content://"+CONTENT_AUTHORITY);
+    //constant for each table in Products
+    public static final String PATH_PRODUCTS="product";
+    public static final String PATH_SUPLLIERS="supplier";
+    public static final String PATH_ORDERS="order";
+
+
 
     /* Inner classes that define the tables contents */
     public static class ProductEntry implements BaseColumns{

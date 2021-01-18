@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_width">150dp</dimen>
+    <dimen name="image_height">150dp</dimen>
+    <dimen name="image_margin">20dp</dimen>
+    <dimen name="layout_padding">20dp</dimen>
+    <dimen name="text_margin">10dp</dimen>
+
+    <!-- Fonts-->
+    <dimen name="title_text">30sp</dimen>
+</resources>
